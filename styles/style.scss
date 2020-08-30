@@ -1,0 +1,475 @@
+@font-face {
+  font-family: Norse;
+  src: url(../assets/fonts/Norse.otf);
+}
+@font-face {
+  font-family: Norse;
+  src: url(../assets/fonts/Norsebold.otf);
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  outline: none;
+}
+
+// NAV START
+nav {
+  background-color: #fff;
+  @media screen and (max-width: 767px) {
+    position: sticky;
+    top: 0;
+  }
+}
+
+#logo-text {
+  @media screen and (max-width: 992px) {
+    font-size: 1.5em;
+  }
+
+  font-family: Norse;
+  color: rgb(204, 149, 67);
+  cursor: pointer;
+  flex: 1;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  line-height: 36px;
+  padding-left: 12px;
+  text-align: left;
+}
+
+#logo {
+  height: 70px;
+  transition: all 0.05s ease-in-out;
+  @media screen and (max-width: 992px) {
+    height: 60px;
+  }
+}
+
+.fa-bars {
+  font-size: 25px;
+  color: rgb(106, 191, 195);
+  cursor: pointer;
+}
+
+.nav-link {
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.nav-link:nth-child(2)::after {
+  display: inline-block;
+  margin-left: 0.455em;
+  vertical-align: 0.145em;
+  content: '';
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+#divider {
+  font-size: 1.5em;
+  font-weight: 400;
+
+  &:hover {
+    cursor: text;
+  }
+}
+// NAV END
+
+// VIEW CURRICULUM START
+#heading-div {
+  margin-bottom: 60px;
+}
+
+h1 {
+  color: rgb(206, 151, 62);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 36rem;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  line-height: 43.2px;
+  text-size-adjust: 100%;
+}
+
+#subheading {
+  color: rgba(74, 74, 74, 0.7);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 33.84px;
+  padding-bottom: 70px;
+  text-size-adjust: 100%;
+}
+
+#curriculum-button {
+  background-color: rgb(106, 191, 195);
+  border-bottom-left-radius: 3.2px;
+  border-bottom-right-radius: 3.2px;
+  border-top-left-radius: 3.2px;
+  border-top-right-radius: 3.2px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0.8px 4px 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 56px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  padding-bottom: 16px;
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-top: 16px;
+  text-size-adjust: 100%;
+
+  &:hover {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+// VIEW CURRICULUM END
+
+#banner {
+  padding-bottom: 100px;
+}
+
+// HOW IT WORKS SECTION START
+#how-it-works-section {
+  margin-bottom: 70px;
+}
+
+h2 {
+  color: rgb(74, 74, 74);
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 28.8px;
+  margin-bottom: 36px;
+}
+
+.basic-text {
+  color: rgba(74, 74, 74, 0.7);
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 33.84px;
+}
+
+.how-it-works > div {
+  padding: 1em;
+}
+
+#how-it-works-title {
+  max-width: 600px;
+  margin-bottom: 100px;
+}
+
+.how-it-works-subtitle {
+  color: rgb(74, 74, 74);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 21.6px;
+}
+
+.how-it-works-subtext {
+  color: rgba(74, 74, 74, 0.7);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.88;
+  text-size-adjust: 100%;
+}
+
+.how-it-works-image {
+  height: 165px;
+}
+// HOW IT WORKS SECTION END
+
+// LEARN EVERYTHING SECTION START
+#learn-everything {
+  background: #f3f3f3;
+  padding: 60px 0 60px 0;
+}
+
+#learn-everything > h2 {
+  color: rgb(74, 74, 74);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 28.8px;
+  margin-bottom: 60px;
+  text-align: center;
+  text-size-adjust: 100%;
+}
+
+.learn-image {
+  height: 160px;
+  width: 160px;
+
+  @media screen and (max-width: 575px) {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.learn-title {
+  color: rgb(74, 74, 74);
+  cursor: pointer;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 21.6px;
+  margin-bottom: 8px;
+  margin-top: 18px;
+}
+
+.learn-tile {
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  height: 256px;
+  margin: 0 30px 30px 0;
+  max-width: 254px;
+  padding: 23px 46px 25px;
+  width: 254px;
+  text-decoration: none;
+
+  @media screen and (max-width: 575px) {
+    height: 155px;
+    margin: 0 auto 15px;
+    padding: 25px;
+    width: 270px;
+    max-width: 270px;
+  }
+}
+
+#learn-tiles {
+  max-width: 1000px;
+
+  @media screen and (max-width: 991px) {
+    max-width: 600px;
+  }
+}
+
+#get-started-button {
+  margin: 40px 0 0 0;
+  background-color: #cc9543;
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 16rem (3.5 * 16rem);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+// LEARN EVERYTHING SECTION END
+
+// SUCCESS STORIES SECTION START
+#success-stories {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+}
+
+#success-stories-div {
+  max-width: 1200px;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 600px;
+  }
+}
+
+.success-story {
+  padding-bottom: 36rem;
+}
+
+#success-stories h2 {
+  color: rgb(74, 74, 74);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 28.8px;
+  margin-bottom: 100px;
+  padding-top: 70px;
+}
+
+#success-stories img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#success-stories h5 {
+  color: rgb(206, 151, 62);
+  cursor: pointer;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.88;
+}
+
+#success-stories p {
+  color: rgba(74, 74, 74, 0.7);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.88;
+}
+
+#more-success {
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16rem !important;
+  font-weight: 400;
+  line-height: 24rem !important;
+  &:hover {
+    color: black;
+    cursor: pointer;
+  }
+}
+
+#start-learning {
+  color: rgba(74, 74, 74, 0.7);
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 35.2rem;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  line-height: 52.8px;
+  margin-block-end: 16px;
+  margin-bottom: 16px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+#sign-up {
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 16rem (3.5 * 16rem);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: #6abfc3;
+  margin-bottom: 80px;
+  &:hover {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+// SUCCESS STORIES SECTION END
+
+// FOOTER START
+footer {
+  padding-top: 100px;
+}
+
+#logo-footer {
+  height: 70px;
+  transition: all 0.05s ease-in-out;
+
+  @media screen and (max-width: 991px) {
+    height: 60px;
+  }
+}
+
+#logo-footer-text {
+  flex: 1;
+  color: #cc9543;
+  text-transform: uppercase;
+  font-family: 'Norse';
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  font-size: 1.6em;
+  display: inline-block;
+  padding-left: 0.5em;
+
+  @media screen and (max-width: 1036px) {
+    font-size: 1.2em;
+  }
+}
+
+.footer-link {
+  color: rgba(74, 74, 74, 0.7);
+  cursor: pointer;
+  flex-basis: 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16rem;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-decoration-line: none;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.fab {
+  color: #cc9543;
+  font-size: 24rem;
+
+  &:hover {
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.fa-comments {
+  color: #fff;
+  font-size: 34px;
+  padding: 15px;
+}
+
+#floater {
+  position: sticky;
+  bottom: 15px;
+  left: 94%;
+  width: 68px;
+  height: 68px;
+  z-index: 2;
+  background: #6abfc3;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
