@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to eazygridz-sample-page 👋</h1>
+<h1 align="center">eazygridz-sample-page</h1>
 <p>
 </p>
 
